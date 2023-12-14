@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -empty -printf \f'\n'
+find /mypath/mydir -empty  -type f | awk -F "/" '{ print $NF }'
